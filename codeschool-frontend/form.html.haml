@@ -1,0 +1,44 @@
+Inputs:
+  Search:
+    %input{type: 'search'}
+  Email:
+    %input{type: 'email'}
+  URL:
+    %input{type: 'url'}
+  Date:
+    %input{type: 'date'}
+  TEL:
+    %input{type: 'tel'}
+  Number:
+    %input{type: 'number'}
+  Range:
+    %input{type: 'range'}
+  Month:
+    %input{type: 'month'}
+  Week:
+    %input{type: 'week'}
+  Time:
+    %input{type: 'time'}
+  Datetime-local:
+    %input{type: 'datetime-local'}
+  Color:
+    %input{type: 'color'}
+
+Forms Elements:
+  Datalist:
+    %input{type: 'text', list: 'browsers'}
+    %datalist#browsers
+      %option Chrome
+      %option Safari
+      %option Firefox
+      %option Opera
+Forms Attributes:
+  Placeholder:
+    %input{type: 'text', placeholder:'Type me...'}
+  Autofocus:
+    %input{type: 'text', autofocus: true}
+  Required:
+    %input{type: 'text', required: true}
+  Pattern:
+    %input{type: 'text', pattern: '[0-9]{3}'}
+  Ect...

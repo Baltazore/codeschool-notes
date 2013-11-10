@@ -1,0 +1,64 @@
+body {
+  border-radius: 15px;
+  border-radius: 50%; //elipse
+  border-radius: 10px 20px 5px 10px;
+  // border-radius: top-left top-rigth bottom-rigth bottom-left
+
+  box-shadow: 1px 2px 2px #000; // no inset, 2px blur-radius, no spread-radius
+  // box-shadow: inset[option] offset-x offset-y blur-radius[option] spread-radius[option] color[option]
+
+  text-shadow: 1px 2px 2px #000;
+  // text-shadow: offset-x offset-y blur-radius[option] color[option]
+
+  box-sizing: padding-box; // border-box;
+
+  background-image: url('1.png'), url('2.png');
+  background-position: top left, center right;
+  background-repeat: no-repeat, no-repeat;
+
+  background:
+    url('1.png') top left no-repeat,
+    url('2.png') center right no-repeat;
+
+  color: rgba(0,0,0,0.75);
+  color: hsla(240, 100%, 50%, 0.75)
+
+  opacity: 0.45;
+
+  background: linear-gradient(to bottom, red, yellow);
+  // background: linear-gradient(angle[option] to side-or-corner[option], color-stops);
+
+  background: radial-gradient(circle at top left, aqua, blue);
+  // background: radial-gradient(shape[option], size[option] at position[option], color-stops);
+
+}
+
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url('OpenSansRegular-webfont.eot');
+  font-style: normal;
+  font-weight: normal;
+}
+
+h1 {
+  font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
+}
+
+// Transforms
+
+.element {
+  transform: translate(20px, 30px);
+  transform: rotate(45deg);
+  transform: scale(1.2, 1.4);
+  transform: skewX(45deg);
+  transform: skewX(-45deg);
+}
+
+// Transitions
+
+.element {
+  background-color: black;
+  transition: background-color 0.2s ease-in-out;
+  // transition: property[option] duration[option] timing-function[option] delay[option]
+  background-color: red;
+}
